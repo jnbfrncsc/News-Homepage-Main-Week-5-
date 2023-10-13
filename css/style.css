@@ -174,7 +174,7 @@ button{
 /*=============== NEWS ===============*/
 .newsSection{
   margin-top: 1.5rem;
-  padding: 1rem 1rem 0.75rem;
+  padding: 1rem 1.5rem 0.75rem;
   background-color: var(--Very-dark-blue);
 }
 
@@ -184,7 +184,7 @@ button{
 }
 
 .newsSection ul li{
-  padding: 1.25rem 0;
+  padding: 1.5rem 0;
 }
 
 .newsSection ul li:not(:last-child){
@@ -274,13 +274,13 @@ button{
   }
   .navMenu ul{
     flex-direction: row;
-    column-gap: 2rem;
+    column-gap: 2.25rem;
   }
   .navMenu{
     margin-left: auto;
   }
   .homeDescription{
-    padding: 0 0 1.5rem;
+    padding: 0 0 1rem;
   }
 
   .mvSection{
@@ -314,7 +314,7 @@ button{
     margin-inline: auto;
   }
   .mvContainer{
-    width: 135%;
+    width: 130%;
   }
   .mvSection{
     flex-direction: row;
@@ -328,11 +328,11 @@ button{
     width: 280px;
   }
   .newsSection{
-    padding: 1rem 1rem 0;
+    padding: 1rem 1.25rem 0;
   }
   .gadgetSection ul{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 0.5rem;
   }
 }
