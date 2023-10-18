@@ -39,6 +39,7 @@ html {
 }
 
 body{
+  width: 100%;
   background: var(--off-white);
   font-size: 15px;
   font-family: var(--body-font);
@@ -64,8 +65,11 @@ button{
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
+.mvContainer{
+  min-width: 64.5%;
+}
 .container{
-  max-width: 1000px;
+  max-width: 1110px;
   margin-inline: 1.5rem;
 }
 /* 
@@ -75,7 +79,7 @@ button{
 
 .flexbox{
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
   flex-direction: column;
 }
 
@@ -90,7 +94,6 @@ button{
 .navToggle,
 .navClose{
   display: flex;
-  width: 1.8rem;
   cursor: pointer;
 }
 
@@ -142,7 +145,7 @@ button{
 
 /*=============== MV ===============*/
 .homeTitle{
-  font-size: 2.7rem;
+  font-size: 3.2rem;
   font-weight: var(--font-extra-bold);
   line-height: 1.2;
 }
@@ -150,7 +153,7 @@ button{
 .homeDescription{
   padding: 1rem 0 1.5rem;
   color: var(--Dark-grayish-blue);
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 /*=============== BUTTON ===============*/
@@ -159,7 +162,7 @@ button{
   padding: 1rem 2rem;
   background-color: var(--soft-red);
   color: var(--off-white);
-  font-size: 12px;
+  font-size: 15px;
   font-weight: var(--font-extra-bold);
   letter-spacing: 5px;
   align-items: center;
@@ -180,11 +183,11 @@ button{
 
 .newsSctTitle{
   color: var(--soft-orange);
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .newsSection ul li{
-  padding: 1.5rem 0;
+  padding: 2rem 0;
 }
 
 .newsSection ul li:not(:last-child){
@@ -266,7 +269,7 @@ button{
 
 @media screen and (min-width: 767px) {
   .nav{
-    padding: 2.5rem 0;
+    padding: 4rem 0;
   }
   .navToggle,
   .navClose{
@@ -274,13 +277,13 @@ button{
   }
   .navMenu ul{
     flex-direction: row;
-    column-gap: 2.25rem;
+    column-gap: 2.8rem;
   }
   .navMenu{
     margin-left: auto;
   }
   .homeDescription{
-    padding: 0 0 1rem;
+    padding: 0 0 1.9rem;
   }
 
   .mvSection{
@@ -313,19 +316,16 @@ button{
   .container{
     margin-inline: auto;
   }
-  .mvContainer{
-    width: 130%;
-  }
   .mvSection{
     flex-direction: row;
   }
   .homeData{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 2rem;
   }
   .homeTitle{
-    width: 280px;
+    width: 300px;
   }
   .newsSection{
     padding: 1rem 1.25rem 0;
