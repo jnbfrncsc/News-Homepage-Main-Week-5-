@@ -39,7 +39,7 @@ html {
 }
 
 body{
-  width: 100%;
+  max-width: 100%;
   background: var(--off-white);
   font-size: 15px;
   font-family: var(--body-font);
@@ -66,12 +66,12 @@ button{
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container{
-  max-width: 1110px;
+  max-width: 1115px;
   margin-inline: 1.5rem;
 }
 
 .mvContainer{
-  min-width: 64.2%;
+  min-width: 65%;
 }
 
 .flexbox{
@@ -174,7 +174,7 @@ button{
 /*=============== NEWS ===============*/
 .newsSection{
   margin-top: 1.5rem;
-  padding: 1.5rem 1.5rem 0.75rem;
+  padding: 1.5rem 2rem 0.75rem;
   background-color: var(--Very-dark-blue);
 }
 
@@ -325,11 +325,18 @@ button{
     width: 300px;
   }
   .newsSection{
-    padding: 1.5rem 1.25rem 0;
+    padding: 1.5rem 1.8rem 0;
   }
   .gadgetSection ul{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0.5rem;
+    gap: 1.5rem;
+  }
+}
+
+/* For 2K resolutions (2048 x 1152, 2048 x 1536) */
+@media screen and (min-width: 2000px) {
+  .container{
+      max-width: 1250px;
   }
 }
